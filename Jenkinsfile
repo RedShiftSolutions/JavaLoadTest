@@ -1,6 +1,6 @@
 def builds = [:]
 
-node('Master') {
+node('master') {
     stage('Compile') {
         git 'https://github.com/RedShiftSolutions/JavaLoadTest'
         sh 'mvn -B package'
